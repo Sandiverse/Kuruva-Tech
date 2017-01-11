@@ -105,14 +105,39 @@ textarea {
    ========================================================================== */
 
 body {
-    width: 100%;
-    margin: 0 auto;
+    background: rgba(236, 240, 241, 1);
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #161617;
     line-height: 1.4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    border: 0 none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     max-width: 100%;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
 }
 
 .main {
@@ -120,12 +145,17 @@ img {
     min-height: 100%;
     float: left;
     clear: both;
-    background: url('../img/header-background.jpg');
+    background: url('../img/back.jpg') no-repeat scroll 0 0;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
+
+/*
 .navbar-inverse {
     background: none !important;
 }
+*/
 
 .subintro {
     width: 100%;
@@ -682,7 +712,7 @@ img {
 .aboutkhaana p {
     font-weight: normal;
     font-size: 18px;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
 
 .aboutus {
@@ -701,7 +731,7 @@ img {
 .aboutus p {
     font-weight: normal;
     font-size: 18px;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
 
 .teamimg {
@@ -719,7 +749,7 @@ img {
     padding: 20px;
 }
 
-.teamli { 
+.teamli {
     padding: 0px;
 }
 
@@ -777,7 +807,7 @@ img {
 .techlist li {
     border: 1px solid #D24D57;
     width: 33%;
-    height: 500px;
+    height: 550px;
     display: inline-block;
     vertical-align: top;
     clear: both;
@@ -914,60 +944,558 @@ img {
     color: #3A539B;
 }
 
-/*
 @media only screen and (min-width:320px) {
-    
+    .description {
+        width: 100%;
+    }
+    .pict {
+        width: 100%;
+    }
+    .watch {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 100%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 50px;
+    }
+    .teamli li {
+        width: 100%;
+    }
+    .techlist li {
+        width: 100%;
+    }
+    .teamdesc {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:360px) {
-    
+    .description {
+        width: 100%;
+    }
+    .pict {
+        width: 100%;
+    }
+    .watch {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 100%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 50px;
+    }
+    .teamli li {
+        width: 100%;
+    }
+    .techlist li {
+        width: 100%;
+    }
+    .teamdesc {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:380px) {
-    
+    .description {
+        width: 100%;
+    }
+    .pict {
+        width: 100%;
+    }
+    .watch {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 100%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 50px;
+    }
+    .teamli li {
+        width: 100%;
+    }
+    .techlist li {
+        width: 100%;
+    }
+    .teamdesc {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:420px) {
-    
+    .description {
+        width: 100%;
+    }
+    .pict {
+        width: 100%;
+    }
+    .watch {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 100%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 50px;
+    }
+    .teamli li {
+        width: 100%;
+    }
+    .techlist li {
+        width: 100%;
+    }
+    .teamdesc {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:460px) {
-    
+    .description {
+        width: 100%;
+    }
+    .pict {
+        width: 100%;
+    }
+    .watch {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 100%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 100%;
+        float: none;
+    }
+    .right {
+        width: 100%;
+        float: none;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 50px;
+    }
+    .teamli li {
+        width: 100%;
+    }
+    .techlist li {
+        width: 100%;
+    }
+    .teamdesc {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:500px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 48%;
+    }
+    .techlist li {
+        width: 48%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:624px) {
-    
-}
-
-@media only screen and (min-width:767px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0px auto;
+    }
+    .watch .note p {
+        margin: 5px auto;
+    }
+    .vid video {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 48%;
+    }
+    .techlist li {
+        width: 48%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:768px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0 41px;
+    }
+    .watch .note p {
+        margin: 31px 100px 0 41px;
+    }
+    .vid video {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 32%;
+    }
+    .techlist li {
+        width: 32%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:800px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0 41px;
+    }
+    .watch .note p {
+        margin: 31px 100px 0 41px;
+    }
+    .vid video {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 32%;
+    }
+    .techlist li {
+        width: 32%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:980px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0 41px;
+    }
+    .watch .note p {
+        margin: 31px 100px 0 41px;
+    }
+    .vid video {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 33%;
+    }
+    .techlist li {
+        width: 33%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:1024px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0 41px;
+    }
+    .watch .note p {
+        margin: 31px 100px 0 41px;
+    }
+    .vid video {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 33%;
+    }
+    .techlist li {
+        width: 33%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width:1200px) {
-    
+    .description {
+        width: 50%;
+    }
+    .pict {
+        width: 50%;
+    }
+    .watch {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .watch .class .note {
+        width: 50%;
+    }
+    .watch .note h2 {
+        margin: 0 41px;
+    }
+    .watch .note p {
+        margin: 31px 100px 0 41px;
+    }
+    .vid video {
+        width: 50%;
+        margin: 70px auto;
+    }
+    .left {
+        width: 40%;
+        float: left;
+    }
+    .right {
+        width: 40%;
+        float: right;
+    }
+    .aboutkhaana h3 {
+        background: url('../img/underline.png') no-repeat scroll center 28px;
+    }
+    .teamli li {
+        width: 33%;
+    }
+    .techlist li {
+        width: 33%;
+    }
+    .teamdesc {
+        width: 500px;
+    }
 }
-*/
-    
+
 
 /* ==========================================================================
    Helper classes
